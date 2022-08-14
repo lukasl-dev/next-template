@@ -1,7 +1,7 @@
 {
   "semi": false,
   "arrowParens": "always",
-  "endOfLine": "crlf",
+  "endOfLine": "lf",
   "bracketSpacing": true,
   "singleQuote": true,
   "jsxSingleQuote": true,
