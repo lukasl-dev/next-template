@@ -1,10 +1,10 @@
 import '~/styles/globals.css'
+import { NextPageWithLayout } from '~/types'
 import { AppProps } from 'next/app'
 import { NextPage } from 'next'
 import React from 'react'
 import nProgress from 'nprogress'
 import { Router } from 'next/router'
-import { NextPageWithLayout } from '~/types'
 
 nProgress.configure({ showSpinner: false })
 Router.events.on('routeChangeStart', () => nProgress.start())
