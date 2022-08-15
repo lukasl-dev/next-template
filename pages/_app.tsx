@@ -18,9 +18,7 @@ interface AppPropsWithLayout extends Omit<AppProps, 'Component'> {
 }
 
 const App: NextPage<AppPropsWithLayout> = ({ Component, pageProps }) => {
-  const getLayout = Component.getLayout
-    ? Component.getLayout
-    : (page: React.ReactElement) => page
+  const getLayout = Component.getLayout ?? ((page) => page)
 
   return <>{getLayout(<Component {...pageProps} />)}</>
 }
